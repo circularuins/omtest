@@ -11,7 +11,6 @@ goog.require('om.dom');
 goog.require('clojure.browser.repl');
 goog.require('reagent_forms.core');
 goog.require('domina');
-goog.require('domina.events');
 goog.require('om.core');
 clojure.browser.repl.connect.call(null,"http://localhost:9000/repl");
 cljs.core.enable_console_print_BANG_.call(null);
@@ -20,9 +19,9 @@ return document.write("<p>Happy</p>");
 });
 goog.exportSymbol('moderncljs.core.happy', moderncljs.core.happy);
 moderncljs.core.validate_form = (function validate_form(){
-var email = document.getElementById("email");
-var password = document.getElementById("password");
-if(((cljs.core.count.call(null,email.value) > (0))) && ((cljs.core.count.call(null,password.value) > (0)))){
+var email = domina.by_id.call(null,"email");
+var password = domina.by_id.call(null,"password");
+if(((cljs.core.count.call(null,domina.value.call(null,email)) > (0))) && ((cljs.core.count.call(null,domina.value.call(null,password)) > (0)))){
 return true;
 } else {
 alert("Please, complete the form!");

@@ -36,7 +36,7 @@ goog.addDependency("../clojure/browser/net.js", ['clojure.browser.net'], ['goog.
 goog.addDependency("../clojure/browser/repl.js", ['clojure.browser.repl'], ['cljs.core', 'clojure.browser.net', 'clojure.browser.event']);
 goog.addDependency("../domina/support.js", ['domina.support'], ['goog.dom', 'cljs.core', 'goog.events']);
 goog.addDependency("../domina.js", ['domina'], ['goog.dom.forms', 'goog.dom', 'goog.dom.classes', 'goog.string', 'cljs.core', 'domina.support', 'goog.style', 'clojure.string', 'goog.events', 'goog.dom.xml']);
-goog.addDependency("../domina/events.js", ['domina.events'], ['cljs.core', 'domina', 'goog.object', 'goog.events']);
-goog.addDependency("../moderncljs/core.js", ['moderncljs.core'], ['ajax.core', 'goog.net.XhrIo', 'reagent.core', 'clojure.browser.repl', 'cljs.core', 'om.dom', 'reagent_forms.core', 'domina', 'domina.events', 'om.core', 'secretary.core']);
+goog.addDependency("../moderncljs/core.js", ['moderncljs.core'], ['ajax.core', 'goog.net.XhrIo', 'reagent.core', 'clojure.browser.repl', 'cljs.core', 'om.dom', 'reagent_forms.core', 'domina', 'om.core', 'secretary.core']);
 goog.addDependency("../omtest/connect.js", ['omtest.connect'], ['clojure.browser.repl', 'cljs.core']);
+goog.addDependency("../domina/events.js", ['domina.events'], ['cljs.core', 'domina', 'goog.object', 'goog.events']);
 goog.addDependency("../helloom/core.js", ['helloom.core'], ['ajax.core', 'goog.net.XhrIo', 'reagent.core', 'clojure.browser.repl', 'cljs.core', 'om.dom', 'reagent_forms.core', 'domina', 'domina.events', 'om.core', 'secretary.core']);
