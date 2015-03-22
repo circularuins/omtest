@@ -31,4 +31,12 @@ goog.addDependency("../om/core.js", ['om.core'], ['goog.dom', 'cljs.core', 'om.d
 goog.addDependency("../secretary/core.js", ['secretary.core'], ['cljs.core', 'clojure.string', 'clojure.walk']);
 goog.addDependency("../omtest/core.js", ['omtest.core'], ['ajax.core', 'reagent.core', 'cljs.core', 'reagent_forms.core', 'om.core', 'secretary.core']);
 goog.addDependency("../omtest/app.js", ['omtest.app'], ['omtest.core', 'cljs.core']);
-goog.addDependency("../helloom/core.js", ['helloom.core'], ['ajax.core', 'reagent.core', 'cljs.core', 'om.dom', 'reagent_forms.core', 'om.core', 'secretary.core']);
+goog.addDependency("../clojure/browser/event.js", ['clojure.browser.event'], ['cljs.core', 'goog.events.EventTarget', 'goog.events.EventType', 'goog.events']);
+goog.addDependency("../clojure/browser/net.js", ['clojure.browser.net'], ['goog.net.xpc.CfgFields', 'goog.net.XhrIo', 'goog.json', 'goog.Uri', 'cljs.core', 'goog.net.EventType', 'goog.net.xpc.CrossPageChannel', 'clojure.browser.event']);
+goog.addDependency("../clojure/browser/repl.js", ['clojure.browser.repl'], ['cljs.core', 'clojure.browser.net', 'clojure.browser.event']);
+goog.addDependency("../domina/support.js", ['domina.support'], ['goog.dom', 'cljs.core', 'goog.events']);
+goog.addDependency("../domina.js", ['domina'], ['goog.dom.forms', 'goog.dom', 'goog.dom.classes', 'goog.string', 'cljs.core', 'domina.support', 'goog.style', 'clojure.string', 'goog.events', 'goog.dom.xml']);
+goog.addDependency("../domina/events.js", ['domina.events'], ['cljs.core', 'domina', 'goog.object', 'goog.events']);
+goog.addDependency("../moderncljs/core.js", ['moderncljs.core'], ['ajax.core', 'goog.net.XhrIo', 'reagent.core', 'clojure.browser.repl', 'cljs.core', 'om.dom', 'reagent_forms.core', 'domina', 'domina.events', 'om.core', 'secretary.core']);
+goog.addDependency("../omtest/connect.js", ['omtest.connect'], ['clojure.browser.repl', 'cljs.core']);
+goog.addDependency("../helloom/core.js", ['helloom.core'], ['ajax.core', 'goog.net.XhrIo', 'reagent.core', 'clojure.browser.repl', 'cljs.core', 'om.dom', 'reagent_forms.core', 'domina', 'domina.events', 'om.core', 'secretary.core']);

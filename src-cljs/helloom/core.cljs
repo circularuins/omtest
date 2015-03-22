@@ -4,8 +4,17 @@
             [reagent-forms.core :refer [bind-fields]]
             [ajax.core :refer [POST]]
             [om.core :as om :include-macros true]
-            [om.dom :as dom :include-macros true])
+            [om.dom :as dom :include-macros true]
+            [goog.net.XhrIo :as xhr]
+            [domina :as d]
+            [domina.events :as events]
+            [clojure.browser.repl :as repl]
+            )
   (:require-macros [secretary.core :refer [defroute]]))
+
+(repl/connect "http://localhost:9000/repl")
+
+(enable-console-print!)
 
 (def app-state (atom {:text "Hello OM!!"}))
 
@@ -22,3 +31,6 @@
 
 (defn ^:export fact[]
   (.write js/document (map (fn [n] (* n n)) [1 2 3 4 5])))
+
+(defn ^:export happy[]
+  (.write js/document "<p>Happy</p>"))

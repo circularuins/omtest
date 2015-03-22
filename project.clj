@@ -21,7 +21,8 @@
    [ring-server "0.3.1"]
    [reagent-forms "0.2.9"]
    [secretary "1.2.1"]
-   [org.omcljs/om "0.8.8"]]
+   [org.omcljs/om "0.8.8"]
+   [domina "1.0.3"]]
   :repl-options
   {:init-ns omtest.repl}
   :jvm-opts
@@ -30,7 +31,8 @@
   [[lein-ring "0.9.0"]
    [lein-environ "1.0.0"]
    [lein-ancient "0.6.2"]
-   [lein-cljsbuild "1.0.4"]]
+   [lein-cljsbuild "1.0.4"]
+   [com.cemerick/austin "0.1.4"]]
   :ring
   {:handler omtest.handler/app,
    :init omtest.handler/init,
